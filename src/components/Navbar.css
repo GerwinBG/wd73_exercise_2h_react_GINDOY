@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400;600&family=Josefin+Sans:wght@300&family=Kanit:wght@500&family=Montserrat&family=Open+Sans&family=Roboto&family=Roboto+Flex&family=Roboto+Slab&family=Signika:wght@500&display=swap");
+
+h2 {
+  font-family: "Signika", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 1.5rem;
+  font-weight: 600;
+}
