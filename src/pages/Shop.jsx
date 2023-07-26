@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import ProducItem from "../components/ProductItem";
-import "./Shop.css"
-import { ShoppingCart } from "phosphor-react";
+import "../css/Shop.css";
 import { useSelector } from "react-redux";
 
 function Shop() {

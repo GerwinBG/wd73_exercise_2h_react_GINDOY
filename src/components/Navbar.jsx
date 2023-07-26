@@ -1,7 +1,7 @@
 import { ShoppingCart } from "phosphor-react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import "./Navbar.css";
+import "../css/Navbar.css";
 
 const Navbar = () => {
   const cartItemCount = useSelector((state) => state.cartItemCount)

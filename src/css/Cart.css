@@ -1,0 +1,40 @@
+.checkOutBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innerLeftCOB input,
+label,
+h5 {
+  margin: 2rem;
+}
+
+.innerLeftCOB {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.innerRightCOB {
+  margin: 2rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .innerRightCOB {
+    flex-direction: column;
+  }
+}
+
+.innerRightCOB .costQty {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.costQty span {
+  margin-left: 3rem;
+}

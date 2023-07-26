@@ -5,6 +5,8 @@ import Shop from "./pages/Shop"
 import Cart from "./pages/Cart"
 import { Provider } from "react-redux"
 import { store } from "./store/store"
+import "./css/App.css"
+import ProductInfo from "./pages/ProductInfo"
 
 
 
@@ -18,7 +20,8 @@ function App() {
           <div className="content">
             <Routes>
               <Route path="/" element={<Shop />} />
-              <Route path="/cart" element={<Cart />} />
+              <Route path="/Cart" element={<Cart />} />
+              <Route path="/ProductInfo" element={<ProductInfo />} />
             </Routes>
           </div>
           <Footer />
