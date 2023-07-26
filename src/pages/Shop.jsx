@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 function Shop() {
   const [products, setProducts] = useState([])
-  const cartItemCount = useSelector((state) => state.cartItemCount)
 
   useEffect(() => {
     document.title = 'Shop'
