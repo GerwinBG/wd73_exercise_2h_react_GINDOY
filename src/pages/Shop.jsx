@@ -28,9 +28,6 @@ function Shop() {
       <div className="shopTitle container-fluid d-flex justify-content-evenly">
         <h1>StressDotCart</h1>
       </div>
-      <div className="">
-        <ShoppingCart size={32} /><span>Cart({cartItemCount})</span>
-      </div>
       <div className="productContainer">
         {
           products.map(
@@ -49,6 +46,7 @@ function Shop() {
       </div>
     </div >
   )
+
 }
 
 export default Shop

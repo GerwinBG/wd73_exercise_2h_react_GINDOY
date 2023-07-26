@@ -8,7 +8,7 @@ function ProducItem(props) {
 
 
   function handleClick() {
-    dispatch(addToCart)
+    dispatch(addToCart(1))
   }
 
   return (

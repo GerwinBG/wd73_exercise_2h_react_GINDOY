@@ -6,6 +6,7 @@ export const cartItemCountSlice = createSlice({
   initialState: 0,
   reducers: {
     addToCart: (state, action) => {
+      console.log(state)
       return state + action.payload
     },
   }
