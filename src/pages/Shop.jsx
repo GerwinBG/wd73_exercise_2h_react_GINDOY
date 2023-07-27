@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ProducItem from "../components/ProductItem";
 import "../css/Shop.css";
-import { useSelector } from "react-redux";
+import axios from "axios";
 
 function Shop() {
   const [products, setProducts] = useState([])
@@ -10,12 +10,13 @@ function Shop() {
     document.title = 'Shop'
   }, [])
 
+  const fetchProducts = async () => {
+    const res = await axios('https://fakestoreapi.com/products')
+    setProducts(res.data)
+  }
+
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-      .then(res => res.json())
-      .then(data => {
-        setProducts(data)
-      })
+    fetchProducts()
   }, [setProducts]);
 
 
